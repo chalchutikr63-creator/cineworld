@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover movies, explore trailers and find legal ways to watch.">
+  <meta name="theme-color" content="#080b14">
+  <title>CineWorld — Discover Movies. Watch Legally.</title>
+  <link rel="preconnect" href="https://image.tmdb.org"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">C</span>CINE<span>WORLD</span></a>
+  <nav><a class="active" href="#home">Discover</a><a href="#catalog">Movies</a><a href="#about">About</a></nav>
+  <a class="header-cta" href="#catalog">Explore films <span>↗</span></a>
+</header>
+<main id="home">
+  <section class="hero">
+    <div class="hero-shade"></div>
+    <div class="hero-content">
+      <div class="eyebrow"><i></i> YOUR NEXT GREAT STORY STARTS HERE</div>
+      <h1>Find your next<br><em>favorite film.</em></h1>
+      <p>Explore stories worth watching. Discover the details, watch the trailers, and find official places to stream.</p>
+      <a class="primary-btn" href="#catalog">Explore the collection <span>→</span></a>
+      <div class="hero-note"><span>✦</span> Movie discovery, made simple.</div>
+    </div>
+    <div class="hero-feature"><div class="feature-label">EDITOR'S PICK</div><strong>Stories that<br>stay with you.</strong><span>Curated for every kind of movie night.</span></div>
+  </section>
+  <section class="catalog-section" id="catalog">
+    <div class="section-head"><div><div class="eyebrow">THE COLLECTION</div><h2>Discover movies<span>.</span></h2><p class="muted">A handpicked starting collection. Search, filter, and explore.</p></div><div class="count" id="resultCount">12 FILMS</div></div>
+    <div class="toolbar">
+      <label class="searchbox"><span>⌕</span><input id="searchInput" type="search" placeholder="Search titles or genres..." aria-label="Search movies"></label>
+      <div class="filters" id="filters"><button class="filter active" data-genre="All">All films</button><button class="filter" data-genre="Action">Action</button><button class="filter" data-genre="Drama">Drama</button><button class="filter" data-genre="Sci-Fi">Sci-Fi</button><button class="filter" data-genre="Adventure">Adventure</button><button class="filter" data-genre="Animation">Animation</button></div>
+    </div>
+    <div class="movie-grid" id="movieGrid" aria-live="polite"></div>
+    <div class="empty" id="emptyState" hidden>No movies match your search. Try another title or genre.</div>
+  </section>
+  <section class="how-section" id="about">
+    <div class="eyebrow">A BETTER WAY TO FIND WHAT TO WATCH</div><h2>From discovery to<br><em>your movie night.</em></h2>
+    <div class="steps">
+      <article><span>01</span><h3>Discover</h3><p>Browse films by title, genre, and story.</p></article>
+      <article><span>02</span><h3>Preview</h3><p>Check the details and find the official trailer.</p></article>
+      <article><span>03</span><h3>Watch legally</h3><p>Find availability through legitimate streaming and rental providers.</p></article>
+    </div>
+  </section>
+</main>
+<footer><a class="brand" href="#"><span class="brand-mark">C</span>CINE<span>WORLD</span></a><p>Discover movies. Choose legal ways to watch.</p><small>Movie information and availability can change. Always confirm details with the provider.</small></footer>
+<div class="modal-backdrop" id="modal" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="close" id="closeModal" aria-label="Close">×</button><div id="modalBody"></div></section></div>
+<script src="app.js"></script>
+</body></html>
